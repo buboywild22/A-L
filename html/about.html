@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - A&L hog meat dealer and retailer</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/button.css">
+        <style>.siz {width:50px; height: 50px;}
+               .siz1{width: 900px; height: 700px;}
+            </style>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <img class="siz" src="/img/cute-pig-paws-up-over-wall-pig-face-cartoon-icon.jpg" alt="">
+                <a class="fw-bold navbar-brand" href="#!">A & L hog meat dealer and retailer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html">Home</a></li>
+                        <li class="nav-item disabled"><a class="nav-link disabled" href="#!">About</a></li>
+                        <li class="nav-item dropdown disabled">
+                            <a class="nav-link dropdown-toggle disabled" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu disabled" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline- disabled" data-bs-toggle="modal" data-bs-target="#cartModal" type="submit" onclick="displayItems()">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-success text-white ms-1 rounded-pill" id="counterId">0</span>
+                        </button>
+
+                        <!--Cart Modal-->
+                        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header bg-primary">
+                                  <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table align-middle">
+                                        <thead>
+                                          <tr class="table-primary">
+                                            <th scope="col">Item ID</th>
+                                            <th scope="col">Item Name</th>
+                                            <th scope="col">Item Image</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Total</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody id="checkOutTable">
+                                        </tbody>
+                                      </table>
+                                      <div class="d-flex justify-content-end">
+                                        <div class="col-3 align-self-end text-center" id="subTotal"></div>
+                                      </div>
+                                      <div class="container">
+                                        <div class="row">
+                                            
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-success"><i class="bi-cart-fill me-1"></i> Check Out</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="d-flex flex-column m-lg-5 bg-light">
+            <hr>
+            <h1 class="text-center fw-bolder">ABOUT US</h1>
+            <div class="m-lg-5 bg-light fs-3">
+                <article class="p-lg-5"><p><span class="fw-bolder">A & L hog meat dealer and retailer</span> is a small business founded by Mr. Alan Lanado and his wife Mrs. Nelly Lanado , wholesaler and retailer of export-grade frozen and fresh pork
+                products. The busIness was organized on April 30, 1992. From humble beginnings, it has grown into a strong Filipino partner of highly-reputable livestock growers and meat producers based mainly in nearby barangays of Ibaan Batangas.
+                </p></article>
+                <article class="p-lg-5"><p>Through the years, the business has managed to supply some of the market in Bicutan , Sucat, Alabang, and some areas in Pasay.</p></article>
+                <article class="p-lg-5"><p>Its main customers are households and businesses that fall under Hotels, Restaurants and Institutions who purchase wholesale  and retail pork products.
+                Businesses who seek to source products from a reliable and trustworthy supplier that is consistent with their product quality, supply availability, and offers the most competitive prices.
+                </p></article>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h1 class="text-center fw-bolder">GALLERY</h1>
+            <div>
+                <div class="container-fluid d-flex flex-row">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal1.jpg" alt="">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal10.jpg" alt="">
+                </div>
+                <div class="container-fluid d-flex flex-row">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal2.jpg" alt="">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal3.jpg" alt="">
+                </div>
+                <div class="container-fluid d-flex flex-row">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal4.jpg" alt="">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal5.jpg" alt="">
+                </div>
+                <div class="container-fluid d-flex flex-row">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal6.jpg" alt="">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal7.jpg" alt="">    
+                </div>
+                <div class="container-fluid d-flex flex-row">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal8.jpg" alt="">
+                    <img class="img-fluid siz1 w-50 col-6 p-1" src="/img/gal9.jpg" alt="">
+                </div>
+               
+            </div>
+        </div>
+
+
+
+
+
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; A&L hog meat dealer and retailer 2022</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- tidio chat -->
+<script src="//code.tidio.co/d0pbj2ip1oao5nhydbx2u5hzs8kgsexj.js" async></script>
+</body>
+</html>

@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - A&L hog meat dealer and retailer</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/button.css">
+        <style>.siz {width:50px;
+                  height: 50px;}</style>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <img class="siz" src="/img/cute-pig-paws-up-over-wall-pig-face-cartoon-icon.jpg" alt="">
+                <a class="fw-bold navbar-brand" href="#!">A & L hog meat dealer and retailer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/html/about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#py-5">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="disabled dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="disabled dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#cartModal" type="submit" onclick="displayItems()">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-success text-white ms-1 rounded-pill" id="counterId">0</span>
+                        </button>
+
+                        <!--Cart Modal-->
+                        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header bg-primary">
+                                  <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table align-middle">
+                                        <thead>
+                                          <tr class="table-primary">
+                                            <th scope="col">Item ID</th>
+                                            <th scope="col">Item Name</th>
+                                            <th scope="col">Item Image</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Total</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody id="checkOutTable">
+                                        </tbody>
+                                      </table>
+                                      <div class="d-flex justify-content-end">
+                                        <div class="col-3 align-self-end text-center" id="subTotal"></div>
+                                      </div>
+                                      <div class="container">
+                                        <div class="row">
+                                            
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-success"><i class="bi-cart-fill me-1"></i> Check Out</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Header--> 
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="/img/header10.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/header11.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/header12.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/header13.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+          <hr>
+        <!-- Section-->
+        <section id="py-5" class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5"> <!--item 1-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/1 Pork Belly 1kg.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Belly 1kg</h5>
+                                    <!-- Product price-->
+                                    ₱453
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#item1Modal">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="item1Modal" tabindex="-1" aria-labelledby="item1ModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-target="#my-modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class=" p-2">
+                                                    <img class="w-100 h-75 image-fluid" src="/img/1 Pork Belly 1kg.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Belly 1kg</h5>
+                                                        <!-- Product price-->
+                                                        ₱453
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control" id="item1value">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item1()" id="item1Btn">Add to cart</a></div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                            </div>
+                                        </div>   
+                                    </div> 
+                        </div>
+                    </div>
+                    <div class="col mb-5"> <!--item 2-->
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/2 Samgyeopsal Belly.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Samgyeopsal Belly 1kg</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through"></span>
+                                    ₱450
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal2">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img class="w-100 h-75" src="/img/2 Samgyeopsal Belly.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Samgyeopsal Belly 1kg</h5>
+                                                        <!-- Product price-->
+                                                        ₱450
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="number" class="form-control" id="item2value">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item2()">Add to cart</a></div>        
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5"> <!--item 3-->
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/3 Pork Maskara 1kg.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Maskara 1kg</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through"></span>
+                                    ₱215
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal3">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img class="w-100 h-75" src="/img/3 Pork Maskara 1kg.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Maskara 1kg</h5>
+                                                        <!-- Product price-->
+                                                        ₱215
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item3value">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item3()">Add to cart</a></div>
+                                                
+                                                </div>
+                                         </div>
+                                        </div>
+                                    
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5"> <!--item 4-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/4 Pork Ear.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Ear 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱160
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal4">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img class="w-100 h-75" src="/img/4 Pork Ear.jpg" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Ear 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱160
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item4value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item4()">Add to cart</a></div>
+                                                
+                                                </div>
+                                           </div>        
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5"> <!--item 5-->
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/5 country style.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Country Style 500g</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through"></span>
+                                    ₱214
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal5">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/5 country style.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Country Style 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱214
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item5value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item5()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5"> <!--item 6-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/6 ground lean.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Ground (Lean) 500g</h5>
+                                    <!-- Product price-->
+                                    ₱204
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal6">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/6 ground lean.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Ground (Lean) 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱204
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item6value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item6()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5"> <!--item 7-->
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/7 Snigang Cut 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sinigang Cut 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through"></span>
+                                    ₱144
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal7">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/7 Snigang Cut 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Sinigang Cut 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱144
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item7value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item7()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5"> <!--item 8-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/8 Spare Ribs 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Spare Ribs 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱214
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal8">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/8 Spare Ribs 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Spare Ribs 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱214
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item8value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item8()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 9-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/9 Adobo Cut 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Adobo Cut 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱199
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal9">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/9 Adobo Cut 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Adobo Cut 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱199
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item9value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item9()">Add to cart</a></div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 10-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/10 Pork Steak 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Steak 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱189
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal10">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/10 Pork Steak 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Steak 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱189
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item10value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item10()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 11-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/11 Menudo Cut 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Menudo Cut 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱199
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal11">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/11 Menudo Cut 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Menudo Cut 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱199
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item11()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 12-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/12 Pork Kasim (Skin On) 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Kasim (Skin On) 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱194
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal12">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/12 Pork Kasim (Skin On) 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Kasim (Skin On) 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱194
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item12value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item12()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 13-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/13 Pork Kasim (Skinless) 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Kasim (Skinless) 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱227
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal13">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/13 Pork Kasim (Skinless) 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Kasim (Skinless) 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱227
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item13value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item13()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 14-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/14 Pork BBQ Slice 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork BBQ Slice 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱209
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal14">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/14 Pork BBQ Slice 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork BBQ Slice 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱209
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item14value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item14()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 15-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/15 Pork Loin 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Loin 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱244
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal15">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/15 Pork Loin 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Loin 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱244
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item15value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item15()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 16-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/16 Pork Kaldereta Cut 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Kaldereta Cut 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱149
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal16">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/16 Pork Kaldereta Cut 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Kaldereta Cut 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱149
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item16value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item16()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 17-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/17 Pork Liver 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Liver 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱147
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal17">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/17 Pork Liver 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Liver 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱147
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item17value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item17()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 18-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/18 Pork Pata Front 1kg.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Pata Front 1kg</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱304
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal18">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/18 Pork Pata Front 1kg.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Pata Front 1kg</h5>
+                                                        <!-- Product price-->
+                                                        ₱304
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item18value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item18()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 19-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/19 Pork Pigue (Skin On) 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Pigue (Skin On) 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱192
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal19">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/19 Pork Pigue (Skin On) 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Pigue (Skin On) 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱192
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item19value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item19()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 20-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/20 Pork Pigue (Skinless) 500g.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Pigue (Skinless) 500g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱224
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal20">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/20 Pork Pigue (Skinless) 500g.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Pigue (Skinless) 500g</h5>
+                                                        <!-- Product price-->
+                                                        ₱224
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item20value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item20()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 21-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/21 pork-blood.webp" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Blood (Clean and Fresh)</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱30
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal21">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/21 pork-blood.webp" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Blood (Clean and Fresh)</h5>
+                                                        <!-- Product price-->
+                                                        ₱30
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item21value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item21()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 22-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/22 Pork Chop without bones.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Chop Without Bones</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱305
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal22">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/22 Pork Chop without bones.jpg" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Chop Without Bones</h5>
+                                                        <!-- Product price-->
+                                                        ₱305
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item22value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item22()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 23-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/23 Pork Chop With Bones.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Chop With Bones 1kg</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱295
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal23">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal23" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/23 Pork Chop With Bones.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Chop With Bones 1kg</h5>
+                                                        <!-- Product price-->
+                                                        ₱295
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item23value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item23()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5"> <!--item 24-->
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="/img/24 Pork Lomo.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pork Lomo 1kg</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    ₱400
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button type="button" class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal24">Add to Cart</button></div>
+                            </div>
+
+                            <div class="modal fade" id="exampleModal24" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    
+                                        <div class="modal-body">
+                                            <div class="d-flex align-items-center justify-content-evenly">
+                                                <div class="p-2">
+                                                    <img src="/img/24 Pork Lomo.png" alt="..." />
+                                                </div>
+                                                <div class="p-2">
+                                                    <div class="text-center">
+                                                        <!-- Product name-->
+                                                        <h5 class="fw-bolder">Pork Lomo 1kg</h5>
+                                                        <!-- Product price-->
+                                                        ₱400
+                                                    </div>
+                                                    <hr>
+                                                    <label for="basic-url" class="form-label">Quantity</label>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" id="item24value" aria-describedby="basic-addon3">
+                                                    </div>
+                                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="item24()">Add to cart</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="p-lg-1 container-fluid d-flex d-block bg-dark mapouter">
+            <div class="container-fluid gmap_canvas">
+                <p class="text-primary fw-bolder text-center fs-1 m-auto">Our Location :</p>
+                <iframe class="mb-1 w-100 h-100" id="gmap_canvas" src="https://maps.google.com/maps?q=bicutan%20market&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <br>
+                <style>.mapouter{position:relative;text-align:right;height:900px;width:902px;}</style>
+                <a href="https://www.embedgooglemap.net"></a>
+                <style>.gmap_canvas {overflow:visible;background:black!important;height:830px;width:902px;}</style>
+            </div>
+        </div>
+        
+    
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; A&L hog meat dealer and retailer 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- tidio chat -->
+        <script src="//code.tidio.co/d0pbj2ip1oao5nhydbx2u5hzs8kgsexj.js" async></script>
+    </body>
+</html>

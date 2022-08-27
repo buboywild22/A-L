@@ -11336,4 +11336,6 @@ cursor: pointer;}
                           from {transform: scale(0)}
                           to {transform: scale(1)}
                         }
+                        
+                        #fut{text-align: bottom;}
 

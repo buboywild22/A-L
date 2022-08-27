@@ -16,16 +16,16 @@
         <style>.siz {width:40px;
                   height: 40px;
                   margin-right: 20px;}</style>
-        <style>.sizFooter {height: 1px;}</style>
+        <style>.sizFooter {height: 50px;}</style>
         <style>.sizlogin {width: 300px;}</style>  
          
           
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5 g-3">
-                <img class="siz" src="/img/phil.png" alt="">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container px-4 px-lg-5 g-3 d-flex flex-row">
+                <img class="siz rounded-pill" src="/img/phil.png" alt="">
                 <img class="siz" src="/img/cute-pig-paws-up-over-wall-pig-face-cartoon-icon.jpg" alt="">
                 <a class="fw-bolder navbar-brand" href="#!">A&L hog meat dealer and retailer</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -45,8 +45,10 @@
                     </ul>
                     
                     <!-- LOG IN ICON -->
-                    <div>              
-                        <label for="loginImage">login<img class="siz logIc" src="/img/login.jpg" alt="loginImage" onclick="document.getElementById('id01').style.display='block'" ></label>
+                    <div>
+                        <img class="siz logIc" src="/img/icons8-login.gif">
+                        <label for="signUpImage">signup<img class="siz logIc" src="/img/signup-icon.webp" alt="loginImage" onclick="document.getElementById('id01').style.display='block'" ></label>              
+                        <label for="loginImage">login<img class="siz logIc" src="/img/login.png" alt="loginImage" onclick="document.getElementById('id01').style.display='block'" ></label>
                         <!-- The Modal -->
                         <div id="id01" class="modal">
                             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -1517,16 +1519,16 @@
         </div>
 
         <!-- Footer-->
-        <footer class="mt-5 border-0 m-0 p-0 py-5 bg-dark">
-            <div class="border-0 m-0 p-0 container-fluid d-flex justify-content-center sizFooter">
-                <p class="m-0 text-center text-white"><span class="text-info">Copyright</span> &copy; A&L hog meat dealer and retailer 2022 follow us on:</p>
+        
+            <div class="mt-5 bg-dark border-0 m-0 p-0 d-flex justify-content-center sizFooter g-3">
+                <p id="fut" class="fut align-self-baseline p-0 m-0 text-white "><span class="text-info">Copyright</span> &copy; A&L hog meat dealer and retailer 2022 follow us on:</p>
                 <a class="align-self-center" href="https://www.facebook.com/AL-hog-meat-dealer-and-retailer-108660135300973"><img class="m-lg-3 rounded-pill siz" src="/img/ifb2.png" alt=""></a>
                 <a class="align-self-center" href=""><img class="m-lg-3 rounded-pill siz align-self-center" src="/img/iinsta.jfif" alt=""></a>
                 <a class="align-self-center" href=""><img class="m-lg-3 rounded-pill siz align-self-center" src="/img/ilinkedin.png" alt=""></a>
                 <a class="align-self-center" href=""><img class="m-lg-3 rounded-pill siz align-self-center" src="/img/itwitter.png" alt=""></a>
-                <a class="align-self-center" href=""><img class="m-lg-3 rounded-1 siz align-self-center" src="/img/iviber.png" alt=""></a>
+                <a class="align-self-center" href=""><img class="m-lg-3 rounded-pill siz align-self-center" src="/img/iviber.png" alt=""></a>
             </div>
-        </footer>
+        
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

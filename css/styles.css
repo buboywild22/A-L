@@ -157,20 +157,6 @@ p {
   margin-bottom: 1rem;
 }
 
-abbr[title],
-abbr[data-bs-original-title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  cursor: help;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-}
-
-address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
-}
 
 ol,
 ul {
@@ -257,39 +243,8 @@ samp {
   unicode-bidi: bidi-override;
 }
 
-pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  overflow: auto;
-  font-size: 0.875em;
-}
-pre code {
-  font-size: inherit;
-  color: inherit;
-  word-break: normal;
-}
-
-code {
-  font-size: 0.875em;
-  color: #d63384;
-  word-wrap: break-word;
-}
 a > code {
   color: inherit;
-}
-
-kbd {
-  padding: 0.2rem 0.4rem;
-  font-size: 0.875em;
-  color: #fff;
-  background-color: #212529;
-  border-radius: 0.2rem;
-}
-kbd kbd {
-  padding: 0;
-  font-size: 1em;
-  font-weight: 700;
 }
 
 figure {
@@ -408,28 +363,6 @@ legend {
   margin-bottom: 0.5rem;
   font-size: calc(1.275rem + 0.3vw);
   line-height: inherit;
-}
-@media (min-width: 1200px) {
-  legend {
-    font-size: 1.5rem;
-  }
-}
-legend + * {
-  clear: left;
-}
-
-::-webkit-datetime-edit-fields-wrapper,
-::-webkit-datetime-edit-text,
-::-webkit-datetime-edit-minute,
-::-webkit-datetime-edit-hour-field,
-::-webkit-datetime-edit-day-field,
-::-webkit-datetime-edit-month-field,
-::-webkit-datetime-edit-year-field {
-  padding: 0;
-}
-
-::-webkit-inner-spin-button {
-  height: auto;
 }
 
 [type=search] {
@@ -11286,6 +11219,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.logIc:hover{width: 70px;
+height: 70px;
+cursor: pointer;}
+
 .scroll-left {
   height: 40px;	
   overflow: hidden;
@@ -11326,14 +11264,76 @@ textarea.form-control-lg {
                           background-color: #555;
                           color: white;
                           float: left;
-                          border: none;
+                          border: 3px;
                           outline: none;
                           cursor: pointer;
                           padding: 14px 16px;
-                          font-size: 17px;
-                          width: 25%;
+                          width: 24.5%;
                         }
                         
                         .tablink:hover {
                           background-color: #777;
+                          color: #000;
                         }
+
+
+
+
+
+
+                        .modal {
+                          display: none; /* Hidden by default */
+                          position: center; /* Stay in place */
+                          z-index: 1; /* Sit on top */
+                          left: 600px;
+                          top: 50px;
+                          width: 625px; /* Full width */
+                          height: 750px; /* Full height */
+                          overflow: auto; /* Enable scroll if needed */
+                          background-color: rgb(0,0,0); /* Fallback color */
+                          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                          padding-top: 60px;
+                        }
+                        
+                        /* Modal Content/Box */
+                        .modal-content {
+                          background-color: #fefefe;
+                          margin: 5px auto; /* 15% from the top and centered */
+                          border: 1px solid #888;
+                          width: 48%; /* Could be more or less, depending on screen size */
+                        }
+                        
+                        /* The Close Button */
+                        .close {
+                          /* Position it in the top right corner outside of the modal */
+                          position: absolute;
+                          right: 25px;
+                          top: 0;
+                          color: #000;
+                          font-size: 35px;
+                          font-weight: bold;
+                        }
+                        
+                        /* Close button on hover */
+                        .close:hover,
+                        .close:focus {
+                          color: red;
+                          cursor: pointer;
+                        }
+                        
+                        /* Add Zoom Animation */
+                        .animate {
+                          -webkit-animation: animatezoom 0.6s;
+                          animation: animatezoom 0.6s
+                        }
+                        
+                        @-webkit-keyframes animatezoom {
+                          from {-webkit-transform: scale(0)}
+                          to {-webkit-transform: scale(1)}
+                        }
+                        
+                        @keyframes animatezoom {
+                          from {transform: scale(0)}
+                          to {transform: scale(1)}
+                        }
+

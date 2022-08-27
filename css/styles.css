@@ -11326,7 +11326,7 @@ textarea.form-control-lg {
                           background-color: #555;
                           color: white;
                           float: left;
-                          border: navajowhite;
+                          border: none;
                           outline: none;
                           cursor: pointer;
                           padding: 14px 16px;
@@ -11337,7 +11337,3 @@ textarea.form-control-lg {
                         .tablink:hover {
                           background-color: #777;
                         }
-                      
-                      
-                        #News {background-color: green;}
-                        #Contact {background-color: blue;}

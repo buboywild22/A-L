@@ -11339,3 +11339,36 @@ cursor: pointer;}
                         
                         #fut{text-align: bottom;}
 
+                        /* Container needed to position the button. Adjust the width as needed */
+.containerLanding {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.containerLanding img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.containerLanding .btn {
+  position: absolute;
+  top: 80%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: var(--bs-red);
+  box-shadow: #1a1e21;
+}
+
+.container .btn:hover {
+  background-color: black;
+}

@@ -11273,7 +11273,16 @@ cursor: pointer;}
                         
                         .tablink:hover {
                           background-color: #777;
-                          color: #000;
+                          color: white;
+                        }
+
+
+                        .divider:after,
+                        .divider:before {
+                        content: "";
+                        flex: 1;
+                        height: 1px;
+                        background: #eee;
                         }
 
 
@@ -11304,10 +11313,6 @@ cursor: pointer;}
 
 
 
-
-
-
-                        
 
                         #fut{text-align: bottom;}
 

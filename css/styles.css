@@ -11342,12 +11342,12 @@ cursor: pointer;}
   border: 1px solid black;
   cursor: pointer;
   border-radius: 25px;
-  background-color: var(--bs-red);
+  background-color: black;
   box-shadow: #1a1e21;
 }
 
-.container .btn:hover {
-  background-color: black;
+.containerLanding .btn:hover {
+  background-color: red;
 }
 
 div.firstimage p{padding-right: 200px;
@@ -11358,3 +11358,9 @@ div.feedback {padding-left: 300px;}
 #areYou {height: 450px;
   font-family: Georgia, 'Times New Roman', Times, serif;}
   h2{font-family: Georgia, 'Times New Roman', Times, serif;}
+
+#firstpar{padding-top: 150px;
+  padding-right: 50px;}  
+#secondpar{padding-top: 200px;
+  margin-left: 150px;}  
+#thirdpar{padding-top: 100px;}

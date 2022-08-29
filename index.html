@@ -24,6 +24,7 @@
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <input type="search" name="q" id="input_search-box" class="rounded bg-black text-light" value="" placeholder="What are you searching?" aria-required="false" maxlength="100" autocomplete="on" aria-label="What are you searching for?">
             <div class="container px-4 px-lg-5 g-3 d-flex flex-row">
                 <img class="siz rounded-pill" src="/img/phil.png" alt="">
                 <img class="siz" src="/img/cute-pig-paws-up-over-wall-pig-face-cartoon-icon.jpg" alt="">
@@ -106,22 +107,26 @@
             <img class="img-fluid" src="/img/landing3.bmp" alt=""> 
             <a href="/html/products.html"><button class="btn">Shop Now</button></a> 
           </div>
+   
+          <div class="bg-secondary" id="comp-klbar5hb" aria-disabled="false" data-angle="0" data-angle-style-location="style" data-screen-in-hide="true" style="visibility: inherit;">---</div>
+         
           <!-- FIRST IMAGE -->
-          <div class="d-flex flex-row firstimage"> 
+          <div id="company" class="d-flex flex-row firstimage"> 
             <div class="m-lg-4">
                 <img class="m-5" src="/img/fresh1.png" alt="">
             </div>          
             <div class="">
                 <p id="firstpar" class="fs-3"><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;"><strong>A&L</strong>has been in business for over 35 years now, initially starting as a small business with just 1 chest-type freezer and now has grown to a shop selling products that fill 14 freezers. Nowadays, <strong>A&L</strong> is a family-run business that offers amazing pork meat that’s been responsibly sourced. We deliver tasty meat to customers all over the city.</span></p>
-                <p class="p-lg-5 fs-3">All of the meats available through <strong>A&L</strong> are certified free of hormones, steroids, and antibiotics. To ensure that the flavor and texture of its pork are maintained, we vacuum seals the product before it ships out. With this method, the meat preserves its freshness up to its destination.</p>  
+                <p id="una" class=" fs-3">All of the meats available through <strong><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">A&L</span></strong> are certified free of hormones, steroids, and antibiotics. To ensure that the flavor and texture of its pork are maintained, we vacuum seals the product before it ships out. With this method, the meat preserves its freshness up to its destination.</p>  
             </div>
           </div>
-          <!-- SECOND IMAGE -->
+
+        <!-- SECOND IMAGE -->
           <div class="d-flex flex-row secondimage"> 
-            <div class="col-7">
-                <p id="secondpar" class="fs-3"><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">The site itself is user-friendly, which makes finding the cuts of pork you want a breeze. Not only does <strong>A&L</strong> deliver delicious pork cuts, but you can also get seafood dishes, along with over-ready meals.</span></p>  
-                <p id="thirdpar" class="fs-3"><strong>A&L</strong>'s meat shop offers an excellent way to buy your favorite pork dishes. Or, if you have kids, you can also request macaroni and cheese and chicken tenders. Plus, <strong>A&L</strong> has an excellent spiral ham the whole family is sure to enjoy when the holidays roll around.</p>  
-                <p class="fs-3">There are also curated boxes available through A&L, so you can select exactly what you want. These boxes work more like bundles than subscriptions, so you don’t have to make a commitment to a monthly payment if you don’t want to. Check out our full review on <strong>A&L</strong> <a href="">here.</a> </p>           
+            <div class="col-6">
+                <p id="secondpar" class="fs-3"><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">The site itself is user-friendly, which makes finding the cuts of pork you want a breeze. Not only does <strong><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">A&L</span></strong>deliver delicious pork cuts, but you can also get seafood dishes, along with over-ready meals.</span></p>  
+                <p id="thirdpar" class="fs-3"><strong><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">A&L</span></strong>'s meat shop offers an excellent way to buy your favorite pork dishes. Or, if you have kids, you can also request macaroni and cheese and chicken tenders. Plus, <strong><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">A&L</span></strong> has an excellent spiral ham the whole family is sure to enjoy when the holidays roll around.</p>  
+                <p class="fs-3">There are also curated boxes available through <strong><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">A&L</span></strong>, so you can select exactly what you want. These boxes work more like bundles than subscriptions, so you don’t have to make a commitment to a monthly payment if you don’t want to. Check out our full review on <strong><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">A&L</span></strong> <a href="">here.</a> </p>           
             </div>
             <div class="m-5 col-5">
                 <img class="m-5 img-fluid " src="/img/fresh2.png" alt="">
@@ -129,15 +134,31 @@
             
           </div>
         
-        <div class="d-flex justify-content-evenly">
-            <img src="/img/Untitled.png" alt="">
-            <img src="/img/Untitled3.png" alt="">
-            <img src="/img/Untitle4.png" alt="">
-            <img src="/img/Untitled2.png" alt="">
-        </div>       
+        <!-- PIC  GALLERY -->
+          <div class="rounded-pill m-auto d-flex justify-content-evenly shadow-sm shadow-lg img-fluid flex-nowrap">
+            <img class="shadow img-fluid" src="/img/Untitled.png" alt="">
+            <img class="shadow img-fluid" src="/img/Untitle6.png" alt="">
+            <img class="shadow img-fluid" src="/img/Untitle4.png" alt="">
+            <img class="shadow img-fluid" src="/img/Untitled2.png" alt="">
+          </div>       
+           
+        <!-- WHOLESALE -->
+        <div class="d-flex flex-row">
+            <div>
+                <img class="rounded-pill m-lg-5 shadow" src="/img/wholesale.png" alt="">
+            </div>
+            <div class="m-lg-5">
+                <p id="wholesale" class="fs-2 fw-bold">What We Supply</h3></p>
+                <p class="fs-1 fw-bolder"><strong><span class="fst-italic" style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">Shop</span></strong> <span style="color:#F20A19;"><strong><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">Wholesale</span></strong></span></p>
+                <p class="fs-4">At <strong><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">A&L</span>, we like to treat our customers to an experience that’s different from the average Meat Shop.  We supply our clients with the finest quality merchandise that meets their every need. You can always count on us. </p>
+                <p class="fs-4">Please check out our wholesale offers and valued customer deals.</p>
+                <p class="fs-4">Click the button below for further details.</p>
+                <button class="fs-1 mt-5 rounded shadow bg-secondary"><strong><span class="fst-italic" style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">Shop</span></strong> <span style="color:#F20A19;"><strong><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">Wholesale</span></strong></span></button>
+            </div>
+        </div>
 
         <!-- POSITIVE FEEDBACK & CUSTOMER REVIEWS -->
-          <div class="m-5 feedback">
+          <div id="testi" class="m-5 feedback">
             <p><h1><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">Positive Feedback</span></h1></p>
             <p class="fs-4">We want to provide the best possible options, which means spending time researching and testing the pork delivery services available. That also means checking out the customer reviews frequently.</p>
             <p><h1><span style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;">Customer Reviews</span></h1></p>
@@ -161,7 +182,7 @@
           </div>
         
         <!-- SHOP BY CATEGORY MENU -->
-        <div class="d-flex text-light justify-content-center d-block">
+        <div class="d-flex text-light justify-content-center flex-lg-nowrap">
             <button class="bg-dark rounded"><p class="text-light fs-3 fw-bolder mt-3">SHOP BY CATEGORY</p></button>
         </div>  
         <div id="catego"  class="container-fluid pb-4">
@@ -1551,11 +1572,13 @@
           <div id="About" class="bg-light tabcontent">
           </div>
         </div>
-
-        <div class="text-center image-fluid">
+        
+        <!-- MONEY BACK -->
+        <div id="money" class="text-center image-fluid">
             <img class="" src="/img/moneyBack.png" alt="">
         </div>
         
+        <!-- ARE YOU ON THE LIST -->
         <div id="areYou" class="areYou container-fluid bg-dark text-light p-5">
             <h1 class="fs" style="text-align:center; font-size:80px;">Are you on <span style="font-family:didot-w01-italic,serif;">the list?</span></h1>
             <div class="text-center">
@@ -1571,11 +1594,12 @@
             </div>    
             <hr>             
         </div>
+
         <!-- Footer-->
         <div class="bg-dark d-flex flex-row justify-content-evenly align-items-start text-light">
             <div class="d-flex flex-column justify-content-evenly text-light">
                 <h2>Shop</h2>
-                <p>All Products</p>
+                <a href="/html/products.html"> <p>All Products</p></a>
                 <p>New</p>
                 <p>Best Sellers</p>
                 <h3> Accept Payment Method</h3>
@@ -1583,11 +1607,11 @@
             </div>
             <div class="d-flex flex-column justify-content-evenly text-light">
                 <h2>Know Us</h2>
-                <p>About Us</p> 
+                <a href="/html/about.html"> <p>About Us</p> </a>
                 <p>Contact Us</p> 
-                <p>Testimonials</p> 
+                <a href="#testi"> <p>Testimonials</p> </a>
                 <p>Wholesale Order</p> 
-                <p>Company Profile</p>
+                <a href="#company"> <p>Company Profile</p></a>
             </div>
             <div class="d-flex flex-column justify-content-evenly text-light">
                 <h2>Policy</h2>
@@ -1602,16 +1626,17 @@
                 <p>Taguig Metro Manila</p> 
                 <hr>
                 <p>Monday-Sunday: 5am-7pm</p> 
-        <p>Telephone:+632-8211723</p>
-        <p>Email:<a href="">A&Lhogmeatdealerandretailer@gmail.com</a> </p>
-    </div>
-    <div class="d-flex flex-column justify-content-evenly text-light">
-        <h2>Customer Service</h2>
-        <p>Tel:+632-8211726</p>
-        <p>Email:<a href="">A&Lhogmeatdealerandretailer@gmail.com</a> </p>
-        <p>Follow Us:</p>
-    </div>
-</div>        
+                <p>Telephone:+632-8211723</p>
+                <p>Email:<a href="">A&Lhogmeatdealerandretailer@gmail.com</a> </p>
+            </div>
+            <div class="d-flex flex-column justify-content-evenly text-light">
+                <h2>Customer Service</h2>
+                <p>Tel:+632-8211726</p>
+                <p>Email:<a href="">A&Lhogmeatdealerandretailer@gmail.com</a> </p>
+                <p>Follow Us:</p>
+            </div>
+        </div>        
+
         <!-- SECOND FOOTER -->
             <div class="bg-dark border-0 m-0 p-0 d-flex justify-content-center sizFooter fs-4">
                 

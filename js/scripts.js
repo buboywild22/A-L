@@ -220,6 +220,16 @@ function item24(){
     cartArray.push({id:24,name:"Pork Lomo 1kg",imgpath:img,quantity:totalQuantity,currentitemprice:price,overallitemprice:totalPrice});
     document.getElementById("counterId").innerHTML = cartArray.length;
 }
+function item25(){
+    var img = "/img/whole.png";
+    var itemquantity = parseInt(document.getElementById("item25value").value);
+    var price = 200;
+    totalQuantity=+itemquantity;
+    var totalPrice = itemquantity * price;
+    cartArray.push({id:25,name:"whole carcass / per kilo",imgpath:img,quantity:totalQuantity,currentitemprice:price,overallitemprice:totalPrice});
+    document.getElementById("counterId").innerHTML = cartArray.length;
+}
+
 function displayItems(){
     document.getElementById("checkOutTable").innerHTML = "";
 
